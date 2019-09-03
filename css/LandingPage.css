@@ -1,0 +1,44 @@
+body{
+   background-image: url("../images/agric8.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+li{
+    margin:10px;
+    overflow: hidden;
+    display: inline;
+    padding: 9px 18px; 
+}
+li a{
+    text-decoration: none;
+    color:white;
+}
+li a:hover{
+  
+    background-color: black;
+    color: aliceblue;
+}
+ul{
+ display: block;
+}
+#big_wrapper{
+    border: 2px solid rgb(20, 20, 20);
+    width: 1000px;
+    margin: 20px auto;
+    background: rgb(0, 0,0,0.5);
+    }
+    P{
+        margin-top: 20%;
+    margin-left: 20%;
+     color: white;
+    font-size: 200%;}
+button{
+    margin-top: 15%;
+    margin-left: 45%;
+    background-color: black;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
