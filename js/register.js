@@ -13,9 +13,10 @@ var firebaseConfig = {
    //initialize firestore database and save the instance to db variable 
    const db= firebase.firestore();
    //create a collection and empty document and save the instance to docRef variable 
-   const docRef = db.collection("register").doc();
+   
    let save = document.getElementById("saved");
    let sname, fname, email, Caddress, phone, DOB, Uname, Crpass, Cmpass;
+  
    saved.addEventListener("click", () =>{
        fname = document.getElementById("fname").value;
        sname = document.getElementById("sname").value;
@@ -43,7 +44,7 @@ var firebaseConfig = {
         else if(!phone.match(/^[+0-9]+$/) || phone.length<11 || phone.length>11){
         alert("YOUR NUMBER IS INCORRECT")
     }
-        else if(!DOB.match(/^[+0-9]+$/) || DOB ==""){
+        else if(!DOB.match(/^[/0-9]+$/) || DOB ==""){
             alert("Enter your DOB")
         }
         else if(Uname=="" || Uname.length<4){
@@ -58,6 +59,8 @@ var firebaseConfig = {
         }
         else{
             alert("Submitted");
+
+            const docRef = db.collection("register").doc(phone);
             
             docRef.set({
 
