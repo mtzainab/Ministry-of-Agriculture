@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(37, 50, 78, 0.87);
+}
+.sign_in{
+    padding: 30px 35px;
+    border: 3px solid black;
+    width: 35%; 
+    margin: 10% 30%; 
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+span.fgtpass{
+    float: right;
+}
+button{
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+#loginbtn{
+    width: 80%;
+    background-color:rgba(10, 12, 119, 0.87);
+    color: white;
+    margin: 8px 25px;
+}

@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(104, 117, 146, 0.87);
 }
 .register{
     width: 35%;
@@ -19,10 +19,22 @@ input{
     box-sizing: border-box;
     border-radius: 0.5em;
 }
-#saved{
-    width: 30%;
+#login{
+    width: 20%;
     background-color: green;
     color: white;
 }
-    
+#submitData{
+    background-color: green;
+    color: white; 
+}
+#sendingLayout{
+    margin: 8% 30%;
+}
+ #successLayout{
+    margin: 8% 30%;
+ } 
+ #failedLayout{
+    margin: 8% 30%;
+ }  
 

@@ -37,6 +37,7 @@ button{
     margin-top: 15%;
     margin-left: 45%;
     background-color: black;
+    cursor: pointer;
 }
 button a{
     text-decoration: none;

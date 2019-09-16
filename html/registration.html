@@ -4,7 +4,7 @@
         <title>
             REGISTER PAGE
         </title>
-        <link rel="stylesheet" href="../css/register.css"/>
+        <link rel="stylesheet" href="../css/registration.css"/>
     </head>
     <body>
         <div class="register" id="container">
@@ -20,13 +20,30 @@
             <input type="password" id="Cmpass" placeholder="Comfirm Password" required/>
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-            <button type="button" id="saved">Submit</button>
+            <button type="button" id="submitData">Submit</button>
             <p>Already have and acct?..<a href="../html/sign_in.html"><br>SignIn Here</a></p>
 
         </div>
+        <div class="img">
+        <div id="sendingLayout">
+                
+                <img  src="../images/loading.gif"/>
+            </div>
+            <div id="successLayout">
+                <h1>congratulations, registration successfull</h1>
+                <img src="../images/successful_icon.png"/>
+                <button id="login">login</button>
+            </div>
+            <div id="failedLayout">
+                <h1>Registration failed, please try again</h1>
+                <img src="../images/faile_icon.png"/>
+            </div>
+        </div>
         <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+         <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
-    <script src="../js/register.js"></script>
+    <script src="../js/registration.js"></script>
     </body>
     
 </html>

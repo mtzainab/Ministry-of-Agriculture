@@ -54,5 +54,6 @@ button{
     text-align: right;
     background: black;
     color: white;
+    cursor: pointer;
     
 }
